@@ -1,0 +1,141 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+header.navbar-arsenal {
+    width: 100%;
+    max-height: 20%;
+    background-color: #f20c1b;
+    color: white;
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 100;
+  }
+
+header.navbar-arsenal .list-arsenal ul {
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem 1.5rem;
+  }
+
+header.navbar-arsenal .list-arsenal li {
+    list-style-type: none;
+    text-decoration-line: none;
+}
+
+header.navbar-arsenal .list-arsenal li a {
+    padding: 0.5rem 1.5rem;
+    text-decoration: none;
+    font-size: 32px;
+    font-weight: 500;
+    color: white;
+    transition: all 0.15s ease-out;
+  }
+
+header.navbar-arsenal .list-arsenal li:hover a {
+    color: #425c77;
+    background-color: whitesmoke;
+    border-radius: 200px;
+  }
+
+header.navbar-arsenal .logo-arsenal img {
+    display: flex;
+    padding-top: 40px;
+    width: 280px;
+  }
+
+header.navbar-arsenal .nama-arsenal{
+    padding-left: 2rem;
+    font-size: 72px;
+    flex-direction: column;
+    text-align: center;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+}
+
+
+  main {
+    font-family: "Nunito";
+    padding: 20px;
+
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  main h1 {
+    font-size: 50px;
+  }
+  main p {
+    font-size: 32px;
+  }
+
+  main .content {
+    flex: 5;
+  
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem 2rem;
+  }
+
+  .featured-image {
+    width: 100%;
+    max-height: 850px;
+    object-fit: cover;
+    object-position: top;
+  }
+
+  main aside {
+    font-family: "Montserrat";
+    inset-block: 0;
+    inset-inline-end: 0;
+    color: rgba(36, 28, 28, 0.935);
+    background-color: white;
+    text-align: center;
+    padding-bottom: 75%;
+  }
+
+  footer {
+    padding: 20px;
+    font-size: 16px;
+    color: white;
+    background-color: rgb(250, 0, 17);
+    text-align: center;
+    font-weight: bold;
+  }
+
+  @media screen and (max-width: 1200px) {
+    main {
+      flex-flow: column nowrap;
+    }
+    main aside {
+      align-self: center;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    nav ul {
+      justify-content: center;
+    }
+    main aside {
+      align-self: stretch;
+    }
+  }
+ 
